@@ -18,9 +18,8 @@ function makeGrid(height, width) {
         var row = myTable.insertRow(i);
         for (var j = 0; j < width; j ++) {
             var cell = row.insertCell(j);
-                // Adds Event Listerers to cells
+                // Adds Event Listeners to cells
                 cell.addEventListener('click', function(colorChange) {
-                    //console.log(colorChange.target);
                     var color = document.getElementById('colorPicker').value;
                     colorChange.target.style.backgroundColor = color;
             });
